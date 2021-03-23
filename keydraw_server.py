@@ -55,7 +55,7 @@ def generate_image(triad, chord_num):
 #        if i%2 == 0:
 #            draw.rectangle(position, fill="orange")
 
-    source_img = Image.open("/home/rm/keyboard.png")
+    source_img = Image.open("keyboard.png")
     draw = ImageDraw.Draw(source_img)
     for i,note in enumerate(triad):
         print (note)
