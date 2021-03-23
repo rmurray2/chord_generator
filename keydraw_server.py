@@ -40,7 +40,7 @@ def generate_image(triad, chord_num):
 
     note_position_d = {}
 
-    
+    #white keys are regularly spaced, so we can just iterate over the keys and add to the x values to define the note coordinate boxes
     y1_white = 172
     y2_white = 222
 
