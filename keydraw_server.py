@@ -96,7 +96,7 @@ if st.button('Generate'):
               'G3':['G3', 'A4', 'B4', 'C4', 'D4', 'E4', 'F#4'],
               'Ab4':['Ab4', 'Bb4', 'C4', 'Db4', 'Eb4', 'F4', 'G4']}
 
-    #major, minor triads
+    #TODO: label major, minor triads
 
     chord_progression = [random.choice(range(0,7)) for i in range(0,seq_len)]
 #    chord_progression = range(0,7)
