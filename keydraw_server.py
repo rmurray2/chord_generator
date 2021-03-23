@@ -7,7 +7,8 @@ import streamlit as st
 def generate_image(triad, chord_num):
 
     note_list_white = ['E3', 'F3', 'G3','A4', 'B4', 'C4', 'D4', "E4", 'F4', 'G4', 'A5', 'B5', 'C5', 'D5', 'E5', 'F5', 'G5' ]
-
+    #bkd is the "Black key dictionary"
+    #coordinates of a box are the values of the dict for each note. ((upper left), (bottom right))
     bkd = {'Ab4':((223, 90), (255, 142)),
            'Bb4':((268, 90), (300, 142)), 
             'Db4':((360, 90), (391, 142)), 
@@ -21,6 +22,7 @@ def generate_image(triad, chord_num):
            'G#5':((858, 90), (889, 142)),
            'Gb3':((178, 90), (210, 142)),}
 
+    #say that some flat notes are the same as other sharp notes
     bkd['G#3'] = bkd['Ab4']
     bkd['F#3'] = bkd['Gb3']
 
@@ -38,17 +40,19 @@ def generate_image(triad, chord_num):
 
     note_position_d = {}
 
+    
     y1_white = 172
     y2_white = 222
 
     new_x1 = 58
     new_x2 = 104
-
+    #get the position for each note
     for note in note_list_white:
         new_x1 += 45.4
         new_x2 +=  45.4
         note_position_d[note] = ((new_x1, y1_white), (new_x2, y2_white))
 
+    #merge the white key dict and black key dict
     all_note_positions = {**note_position_d, **bkd}
 
 #    for i, (note, position) in enumerate(all_note_positions.items()):
