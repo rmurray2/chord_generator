@@ -113,7 +113,7 @@ if st.button('Generate'):
 #    input_note = 'Ab4'
 
     print ('randomly chosen note:', input_note, chord_progression)
-    st.write('Randomly Chosen Root Note:' , input_note[:-1], )
+    st.write('Root Note:' , input_note[:-1], )
     st.write('Randomly Chosen Chord Progression:', ', '.join([str(i+1) for i in chord_progression]))
 
 
