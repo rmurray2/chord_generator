@@ -87,6 +87,8 @@ random_choice = st.selectbox('Select Manual or Random major root note', ['Manual
 if random_choice == 'Manual':
     input_note = st.radio(label='Root Note',options=['A', 'Bb', 'B', 'C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab'])
 
+st.markdown('###')
+
 if st.button('Generate'):
     st.header("Chord progression")
 
@@ -208,6 +210,16 @@ if st.button('Generate'):
     img = generate_image(note_dict)
     img = img.resize((img.size[0], 125))
     st.image(img)
+    st.markdown('###')
+    st.markdown('[![image link](https://www.buymeacoffee.com/assets/img/bmc-meta-new/new/favicon-32x32.png?version=2021.03.24.06.20.31)](https://www.buymeacoffee.com/rmurray20)')
+
+    hide_streamlit_style = """
+                <style>
+                #MainMenu {visibility: hidden;}
+                </style>
+                """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 
 
 
