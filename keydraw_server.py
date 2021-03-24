@@ -87,9 +87,9 @@ random_choice = st.selectbox('Select manual or random major root note', ['Manual
 if random_choice == 'Manual':
     input_note = st.radio(label='Root Note',options=['A', 'Bb', 'B', 'C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab'])
 
-st.markdown('###')
 
 if st.button('Go'):
+    st.markdown('###')
     st.header("Chord progression")
 
     #get the whole sequence of  keys used 
