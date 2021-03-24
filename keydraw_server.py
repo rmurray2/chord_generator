@@ -211,7 +211,9 @@ if st.button('Generate'):
     img = img.resize((img.size[0], 125))
     st.image(img)
     st.markdown('###')
-    st.markdown('[![image link](https://www.buymeacoffee.com/assets/img/bmc-meta-new/new/favicon-32x32.png?version=2021.03.24.06.20.31)](https://www.buymeacoffee.com/rmurray20)')
+    github_text ='[![image link](https://github.githubassets.com/favicons/favicon.svg)](https://github.com/rmurray2/chord_generator)' 
+    coffee_text = '[![image link](https://www.buymeacoffee.com/assets/img/bmc-meta-new/new/favicon-32x32.png?version=2021.03.24.06.20.31)](https://www.buymeacoffee.com/rmurray20)'
+    st.markdown(github_text + ' ' + coffee_text)
 
     hide_streamlit_style = """
                 <style>
