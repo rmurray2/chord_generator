@@ -80,16 +80,16 @@ def get_passing_notes(scale):
     return passing_notes
 
 st.title('Random chord progression generator')
-seq_len = st.number_input('sequence length (1-6)', min_value=2, max_value=6, value=4)
+seq_len = st.number_input('Sequence length (1-6)', min_value=2, max_value=6, value=4)
 
-random_choice = st.selectbox('Select Manual or Random major root note', ['Manual', 'Random'], index=1)
+random_choice = st.selectbox('Select manual or random major root note', ['Manual', 'Random'], index=1)
 
 if random_choice == 'Manual':
     input_note = st.radio(label='Root Note',options=['A', 'Bb', 'B', 'C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab'])
 
 st.markdown('###')
 
-if st.button('Generate'):
+if st.button('Go'):
     st.header("Chord progression")
 
     #get the whole sequence of  keys used 
@@ -213,7 +213,8 @@ if st.button('Generate'):
     st.markdown('###')
     github_text ='[![image link](https://github.githubassets.com/favicons/favicon.svg)](https://github.com/rmurray2/chord_generator)' 
     coffee_text = '[![image link](https://www.buymeacoffee.com/assets/img/bmc-meta-new/new/favicon-32x32.png?version=2021.03.24.06.20.31)](https://www.buymeacoffee.com/rmurray20)'
-    st.markdown(github_text + ' ' + coffee_text)
+    ethereum_text = '[![image link](https://www.myetherwallet.com/img/eth.878d30dd.svg)](https://etherscan.io/address/3d9fe6c96dce1222bd6f852b64c17b5a88e885e9)'
+    st.markdown(github_text + ' ' + ethereum_text + ' ' + coffee_text)
 
     hide_streamlit_style = """
                 <style>
