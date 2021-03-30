@@ -193,8 +193,8 @@ if st.button('Go'):
         st.image(img)
 
     st.header("Melody palette")
-    st.markdown("- ![tension p](https://via.placeholder.com/15/FF0000/000000?text=+) `tension (passing notes)`", unsafe_allow_html=True)
-    st.markdown("- ![release](https://via.placeholder.com/15/0000FF/000000?text=+) `release (major pentatonic scale)`", unsafe_allow_html=True)
+    st.markdown('<span style="color:blue">release (major pentatonic scale)</span>', unsafe_allow_html=True)
+    st.markdown('<span style="color:red">tension (passing notes)</span>', unsafe_allow_html=True)
 
     #generate a note_dict to to show the melody palette
     note_dict = {}
