@@ -213,8 +213,7 @@ if st.button('Go'):
     st.markdown('###')
     github_text ='[![image link](https://github.githubassets.com/favicons/favicon.svg)](https://github.com/rmurray2/chord_generator)' 
     coffee_text = '[![image link](https://www.buymeacoffee.com/assets/img/bmc-meta-new/new/favicon-32x32.png?version=2021.03.24.06.20.31)](https://www.buymeacoffee.com/rmurray20)'
-    ethereum_text = '[![image link](https://www.myetherwallet.com/img/eth.878d30dd.svg)](https://etherscan.io/address/3d9fe6c96dce1222bd6f852b64c17b5a88e885e9)'
-    st.markdown(github_text + ' ' + ethereum_text + ' ' + coffee_text)
+    st.markdown(github_text + ' ' + coffee_text)
 
     hide_streamlit_style = """
                 <style>
